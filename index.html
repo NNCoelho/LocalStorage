@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+</head>
+<body>
+
+    <h1>LocalStorage</h1>
+
+    <script>
+
+        localStorage.setItem('valor1', 'Nuno');
+
+        var dados = localStorage.getItem('valor1');
+
+        if(localStorage.getItem('valor1') != null){
+            console.log('O valor existe.')
+            console.log(localStorage.getItem('valor1'));
+        } else {
+            console.log('O valor não existe.')
+        }
+
+        // Limpa o localstorage
+        localStorage.clear();
+
+        // Remover um item da localstorage pelo valor do mesmo
+        localStorage.removeItem();
+
+    </script>
+    
+</body>
+</html>
